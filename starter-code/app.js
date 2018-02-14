@@ -37,8 +37,7 @@ app.get('/categories', (req, res) => {
     })
 })
 
-
-app.get('/search', (req, res) => {
+app.get('/categories?cat=', (req, res) => {
   client.getRandomJoke('dev')
   .then((response) => {
     // use the response here
