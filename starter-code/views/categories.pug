@@ -1,0 +1,9 @@
+extends layout 
+
+block content
+    h1 Categories of Chuck Norris Jokes
+        p Here is a list of categories for the jokes
+        ul
+            each category in categories
+                a(href=`./categories?cat=${category}`) #{category}
+                li= ''

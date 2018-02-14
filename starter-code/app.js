@@ -37,6 +37,24 @@ app.get('/categories', (req, res) => {
     })
 })
 
+
+app.get('/search', (req, res) => {
+  client.getRandomJoke('dev')
+  .then((response) => {
+    // use the response here
+  }).catch((err) => {
+    // handle error
+  });
+
+
+  res.render('', {
+  })
+})
+
+
+
+
+
 app.get('/search', (req, res) => {
   res.render('', {
   })
